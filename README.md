@@ -46,12 +46,11 @@
 - dataset_preprocessing.py:
 
          ```python
-             #here create  directory name that contain the dataset “'UBIRIS_800_600/Sessao_1/"
+         #here create  directory name that contain the dataset “'UBIRIS_800_600/Sessao_1/"
 
-             for filepath in glob.iglob('UBIRIS_800_600/Sessao_1/*'):
-             #here create  directory name that will contain the dataset after the preprocessing “final_image/"
-
-               cv2.imwrite('final_image/'+str(label)+'.'+str(number)+'.jpg',img)
+         for filepath in glob.iglob('UBIRIS_800_600/Sessao_1/*'):
+                  #here create  directory name that will contain the dataset after the preprocessing “final_image/"
+                  cv2.imwrite('final_image/'+str(label)+'.'+str(number)+'.jpg',img)
         ```
 
     - In iris_extreaction_4.py:
