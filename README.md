@@ -45,10 +45,10 @@
 2. Change your directory names that contain the dataset to the name in the python and notebook files in these  lines:<br/>
 - dataset_preprocessing.py:
 
-         ```html
+         ```python
              #here create  directory name that contain the dataset “'UBIRIS_800_600/Sessao_1/"
 
-for filepath in glob.iglob('UBIRIS_800_600/Sessao_1/*'):
+             for filepath in glob.iglob('UBIRIS_800_600/Sessao_1/*'):
              #here create  directory name that will contain the dataset after the preprocessing “final_image/"
 
                cv2.imwrite('final_image/'+str(label)+'.'+str(number)+'.jpg',img)
@@ -56,7 +56,7 @@ for filepath in glob.iglob('UBIRIS_800_600/Sessao_1/*'):
 
     - In iris_extreaction_4.py:
  
-         ```html
+         ```python
         #here the  directory name that contain the dataset “final_image/"
         
         for filefilepath in glob.iglob('final_image/*'):
@@ -66,7 +66,7 @@ for filepath in glob.iglob('UBIRIS_800_600/Sessao_1/*'):
         ```
     - In iris_classification_4.ipy:
 
-         ```html
+         ```python
         #here directory name is "final_iris2" which contain extracted iris features
         
         for filefilepath in glob.iglob('final_iris2/*'):
